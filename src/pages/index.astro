@@ -144,7 +144,7 @@ import Layout from '../layouts/Layout.astro';
         fetchCSV(urls.menu),
         fetchCSV(urls.reviews)
       ]).then(([menuRows, reviewsRows]) => {
-        const whatsapp = '5491165565637';
+        const whatsapp = '5491132776974';
         window.dynamicWhatsapp = whatsapp;
 
         const whatsappButton = document.getElementById('whatsapp-button');
@@ -175,7 +175,7 @@ list.innerHTML = products.map((product) => `
       <h3>${product.nombre}</h3>
       <p>${product.descripcion}</p>
     </div>
-    <a class="btn" href="https://wa.me/5491165565637?text=${encodeURIComponent('¡Hola! Quisiera ' + product.nombre)}" target="_blank">Reservar</a>
+    <a class="btn" href="https://wa.me/5491132776974?text=${encodeURIComponent('¡Hola! Quisiera ' + product.nombre)}" target="_blank">Reservar</a>
   </div>
 `).join('');
 
