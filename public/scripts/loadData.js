@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
-  fetch('https://docs.google.com/spreadsheets/d/1oSXRJkVeD3napDd9bltITSA4snw4uqOgXzLtfav05yo/gviz/tq?tqx=out:csv')
+  fetch('https://docs.google.com/spreadsheets/d/1GKFy-rpXx0ZuDoe55UZlqE2pwG4Zx1o8846zn8nAAJk/gviz/tq?tqx=out:csv')
     .then(res => res.text())
     .then(csvText => {
       const parsed = Papa.parse(csvText, { header: true });
